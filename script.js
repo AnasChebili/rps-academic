@@ -9,11 +9,17 @@ const controlBtns = document.querySelectorAll('.control-btn');
 
 controlBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      const choice = btn.dataset.choice;
-      playRound(choice);
+        const choice = btn.dataset.choice;
+        playRound(choice);
     });
-  });
+});
 
-  function playRound(playerChoice) {
+function playRound(playerChoice) {
     console.log('Player picked:', playerChoice);
-  }
+}
+
+function playRound(playerChoice) {
+    const choices = ['rock', 'paper', 'scissors'];
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+    console.log('Computer picked:', computerChoice);
+}
