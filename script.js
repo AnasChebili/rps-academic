@@ -23,3 +23,22 @@ function playRound(playerChoice) {
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
     console.log('Computer picked:', computerChoice);
 }
+
+
+let result;
+if (playerChoice === computerChoice) {
+    result = 'draw';
+} else if (
+    (playerChoice === 'rock' && computerChoice === 'scissors') ||
+    (playerChoice === 'paper' && computerChoice === 'rock') ||
+    (playerChoice === 'scissors' && computerChoice === 'paper')
+) {
+    result = 'win';
+    state.playerScore++;
+} else {
+    result = 'lose';
+    state.computerScore++;
+}
+
+playerScoreEl.textContent = state.playerScore;
+computerScoreEl.textContent = state.computerScore;
