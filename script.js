@@ -52,3 +52,13 @@ const choiceIcons = {
 
   document.getElementById('player-choice').querySelector('.icon').textContent = choiceIcons[playerChoice];
   document.getElementById('computer-choice').querySelector('.icon').textContent = choiceIcons[computerChoice];
+
+
+  const playerResultEl = document.getElementById('player-result');
+
+  playerResultEl.textContent = result.toUpperCase();
+  playerResultEl.classList.add('visible', result);
+
+  setTimeout(() => {
+    playerResultEl.classList.remove('visible');
+  }, 2000);
