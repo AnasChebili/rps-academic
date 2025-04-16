@@ -24,3 +24,22 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--secondary);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.control-btn {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+}
