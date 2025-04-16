@@ -42,3 +42,13 @@ if (playerChoice === computerChoice) {
 
 playerScoreEl.textContent = state.playerScore;
 computerScoreEl.textContent = state.computerScore;
+
+
+const choiceIcons = {
+    rock: '✊',
+    paper: '✋',
+    scissors: '✌️'
+  };
+
+  document.getElementById('player-choice').querySelector('.icon').textContent = choiceIcons[playerChoice];
+  document.getElementById('computer-choice').querySelector('.icon').textContent = choiceIcons[computerChoice];
