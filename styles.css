@@ -44,6 +44,17 @@ header {
   color: white;
   padding: 15px;
   border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.score {
+  text-align: center;
+}
+
+.score h2 {
+  font-size: 2rem;
+  margin-top: 5px;
 }
 
 .control-btn {
