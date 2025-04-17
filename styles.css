@@ -96,6 +96,14 @@ header {
   transform: scale(1.2);
 }
 
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
 .control-btn {
   background-color: var(--secondary);
   color: white;
@@ -104,7 +112,23 @@ header {
   width: 80px;
   height: 80px;
   font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.control-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.control-btn:active {
+  transform: translateY(0);
+}
+
 .result {
   position: absolute;
   top: 0;
