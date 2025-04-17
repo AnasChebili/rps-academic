@@ -87,6 +87,15 @@ header {
   width: 40px;
 }
 
+.icon {
+  font-size: 3.5rem;
+  transition: transform 0.3s ease;
+}
+
+.selected .icon {
+  transform: scale(1.2);
+}
+
 .control-btn {
   background-color: var(--secondary);
   color: white;
