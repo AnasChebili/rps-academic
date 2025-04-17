@@ -29,6 +29,14 @@ body {
   width: 100%;
 }
 
+header {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .score-board {
   display: flex;
   justify-content: space-around;
