@@ -26,6 +26,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+  width: 100%;
 }
 
 .score-board {
