@@ -1,3 +1,13 @@
+:root {
+  --primary: #2c3e50;
+  --secondary: #3498db;
+  --accent: #e74c3c;
+  --light: #ecf0f1;
+  --win: #2ecc71;
+  --lose: #e74c3c;
+  --draw: #f39c12;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +15,6 @@
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-:root {
-  --primary: #2c3e50;
-  --secondary: #3498db;
-  --light: #ecf0f1;
 }
 
 body {
