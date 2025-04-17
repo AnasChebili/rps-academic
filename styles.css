@@ -57,6 +57,13 @@ header {
   margin-top: 5px;
 }
 
+.game-area {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  height: 200px;
+}
+
 .control-btn {
   background-color: var(--secondary);
   color: white;
