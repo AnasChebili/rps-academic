@@ -145,3 +145,18 @@ header {
 .result.visible {
   opacity: 1;
 }
+
+.win {
+  background-color: var(--win);
+  color: white;
+}
+
+.lose {
+  background-color: var(--lose);
+  color: white;
+}
+
+.draw {
+  background-color: var(--draw);
+  color: white;
+}
