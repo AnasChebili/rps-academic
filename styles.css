@@ -160,3 +160,26 @@ header {
   background-color: var(--draw);
   color: white;
 }
+
+.player-label,
+.computer-label {
+  position: absolute;
+  top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .game-area {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .choice-display {
+    margin: 10px 0;
+    height: 120px;
+  }
+
+  .vs {
+    height: 30px;
+  }
+}
