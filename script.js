@@ -61,4 +61,16 @@ function playRound(playerChoice) {
         playerResultEl.classList.add('lose');
     }
 
+
+    setTimeout(() => {
+        playerResultEl.classList.add('visible');
+    }, 300);
+
+
+    setTimeout(() => {
+        playerChoiceEl.classList.remove('selected');
+        computerChoiceEl.classList.remove('selected');
+        playerResultEl.classList.remove('visible');
+    }, 2000);
+
 }
