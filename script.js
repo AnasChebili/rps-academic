@@ -37,5 +37,28 @@ function playRound(playerChoice) {
     computerChoiceEl.querySelector('.icon').textContent = choiceIcons[computerChoice];
     computerChoiceEl.classList.add('selected');
 
+    
+    let result;
+    if (playerChoice === computerChoice) {
+        result = 'draw';
+        playerResultEl.textContent = 'DRAW';
+        playerResultEl.classList.add('draw');
+    } else if (
+        (playerChoice === 'rock' && computerChoice === 'scissors') ||
+        (playerChoice === 'paper' && computerChoice === 'rock') ||
+        (playerChoice === 'scissors' && computerChoice === 'paper')
+    ) {
+        result = 'win';
+        state.playerScore++;
+        playerScoreEl.textContent = state.playerScore;
+        playerResultEl.textContent = 'WIN';
+        playerResultEl.classList.add('win');
+    } else {
+        result = 'lose';
+        state.computerScore++;
+        computerScoreEl.textContent = state.computerScore;
+        playerResultEl.textContent = 'LOSE';
+        playerResultEl.classList.add('lose');
+    }
 
 }
