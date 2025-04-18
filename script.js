@@ -1,11 +1,16 @@
 const state = {
     playerScore: 0,
     computerScore: 0,
-};
+    playerChoice: null,
+    computerChoice: null
+  };
 
-const playerScoreEl = document.getElementById('player-score');
-const computerScoreEl = document.getElementById('computer-score');
-const controlBtns = document.querySelectorAll('.control-btn');
+  const playerScoreEl = document.getElementById('player-score');
+  const computerScoreEl = document.getElementById('computer-score');
+  const playerChoiceEl = document.getElementById('player-choice');
+  const computerChoiceEl = document.getElementById('computer-choice');
+  const playerResultEl = document.getElementById('player-result');
+  const controlBtns = document.querySelectorAll('.control-btn');
 
 controlBtns.forEach(btn => {
     btn.addEventListener('click', () => {
